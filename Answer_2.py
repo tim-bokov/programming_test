@@ -40,3 +40,6 @@ print('ADF Statistic: %f' % result_facebook[0])
 print('p-value: %f' % result_facebook[1])
 for key, value in result_facebook[4].items():
     print('\t%s: %.3f' % (key, value))
+    
+# the null hypothesis in ADF test is that a unit root is present in a time series sample. Since p-values in all cases are significantly less than .05, 
+# we can't accept null hypothesis, therefore distributions of r_i are stationary over time
