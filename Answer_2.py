@@ -1,3 +1,5 @@
+# applying augmented Dickey-Fuller unit root test
+
 from statsmodels.tsa.stattools import adfuller
 result_app = adfuller(r_apple)
 print('ADF Statistic: %f' % result_app[0])
