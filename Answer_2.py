@@ -43,3 +43,10 @@ for key, value in result_facebook[4].items():
     
 # the null hypothesis in ADF test is that a unit root is present in a time series sample. Since p-values in all cases are significantly less than .05, 
 # we can't accept null hypothesis, therefore distributions of r_i are stationary over time
+
+from statsmodels.stats.stattools import durbin_watson
+print(durbin_watson(r_google))
+print(durbin_watson(r_facebook))
+print(durbin_watson(r_apple))
+
+# values of Durbin-Watson coefficient are close to 2, meaning that there is no autocorrelation in r_i for all three samples
