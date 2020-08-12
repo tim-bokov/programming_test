@@ -1,4 +1,4 @@
- applying augmented Dickey-Fuller unit root test
+# applying augmented Dickey-Fuller unit root test
 import pandas as pd
 import matplotlib.pyplot as plt
 from statsmodels.tsa.stattools import adfuller
